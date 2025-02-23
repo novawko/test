@@ -636,6 +636,55 @@ const frontPage = (options) => {
 }; 
 
 
+/* ============================================================= */
+/* Hiding main masterlist transaction log if empty
+================================================================ */
+// Choose your scope
+let container = document.querySelector('.mainmasterlistlog');
+
+// Loop over all elements in the scope
+container.querySelectorAll('*').forEach(el => {
+  // Checks that it's an empty text element and that it's not a self-closing element like <img>, <br> or <hr>
+  if (!el.children.length && // no children
+    el.textContent.trim() === '' && // its empty
+    el.nodeName !== 'IMG' && // not an image
+    el.nodeName !== 'BR' && // not a <br>
+    el.nodeName !== 'HR' // not a <hr>
+    ) {
+    // adds the is-empty class
+    el.classList.add('is-empty');
+  // but if it is an image, check if its src is empty
+  } else if (el.nodeName === 'IMG' && el.getAttribute('src') === '') {
+    // adds the is-empty class to <img> elements with an empty src attribute
+    el.classList.add('is-empty');
+  }
+});
+
+/* ============================================================= */
+/* Hiding pets masterlist transaction log if empty
+================================================================ */
+// Choose your scope
+let container = document.querySelector('.petsmasterlistlog');
+
+// Loop over all elements in the scope
+container.querySelectorAll('*').forEach(el => {
+  // Checks that it's an empty text element and that it's not a self-closing element like <img>, <br> or <hr>
+  if (!el.children.length && // no children
+    el.textContent.trim() === '' && // its empty
+    el.nodeName !== 'IMG' && // not an image
+    el.nodeName !== 'BR' && // not a <br>
+    el.nodeName !== 'HR' // not a <hr>
+    ) {
+    // adds the is-empty class
+    el.classList.add('is-empty');
+  // but if it is an image, check if its src is empty
+  } else if (el.nodeName === 'IMG' && el.getAttribute('src') === '') {
+    // adds the is-empty class to <img> elements with an empty src attribute
+    el.classList.add('is-empty');
+  }
+});
+
+
 /* ==================================================================== */
 /* Softload pages
 ======================================================================= */
