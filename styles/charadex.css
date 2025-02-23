@@ -645,10 +645,3 @@ p:last-child {
         font-size: 5rem;
     }
 }
-
-/* ============================================================= */
-/* Hiding transaction logs if empty
-================================================================ */
-.mainmasterlistlog:empty, .petsmasterlistlog:empty, .mainmasterlistlog:has(.image-wrapper:empty), .petsmasterlistlog:has(.image-wrapper:empty) {
-  display: none;
-}
