@@ -637,33 +637,6 @@ const frontPage = (options) => {
 
 
 /* ==================================================================== */
-/* Hide main masterlist transaction logs if empty
-======================================================================= */
-const mainmasterlistlog = document.getElementById('mainmasterlistlog');
-
-function hideIfEmpty(mainmasterlistlog) {
-  if (!mainmasterlistlog || (mainmasterlistlog.childNodes.length === 0 || mainmasterlistlog.textContent.trim() === '')) {
-    mainmasterlistlog.style.display = 'none';
-  }
-}
-
-hideIfEmpty(mainmasterlistlog);
-
-/* ==================================================================== */
-/* Hide pets masterlist transaction logs if empty
-======================================================================= */
-const petsmasterlistlog = document.getElementById('petsmasterlistlog');
-
-function hideIfEmpty(petsmasterlistlog) {
-  if (!petsmasterlistlog || (petsmasterlistlog.childNodes.length === 0 || petsmasterlistlog.textContent.trim() === '')) {
-    petsmasterlistlog.style.display = 'none';
-  }
-}
-
-hideIfEmpty(petsmasterlistlog);
-
-
-/* ==================================================================== */
 /* Softload pages
 ======================================================================= */
 $(window).on('pageshow',function(){loadPage()});
