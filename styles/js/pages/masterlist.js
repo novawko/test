@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
 
         // Create the ownership log dex
-        if (charadex.tools.checkArray(listData.profileArray[0].ownershiplog)) {
+        if (charadex.tools.checkArray(listData.profileArray[0].ownership)) {
           let logs = await charadex.initialize.page(
-            listData.profileArray[0].ownershiplog,
+            listData.profileArray[0].ownership,
             charadex.page.masterlist.relatedData['ownership log']
           );
         }
