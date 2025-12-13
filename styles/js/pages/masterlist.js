@@ -27,6 +27,14 @@ document.addEventListener("DOMContentLoaded", async () => {
           );
         }
 
+        // Create the ownership log dex
+        if (charadex.tools.checkArray(listData.profileArray[0].ownershiplog)) {
+          let logs = await charadex.initialize.page(
+            listData.profileArray[0].ownershiplog,
+            charadex.page.masterlist.relatedData['ownership log']
+          );
+        }
+
         // Create the image gallery
         if (charadex.tools.checkArray(listData.profileArray[0].imagegallery)) {
           let gallery = await charadex.initialize.page(
