@@ -39,6 +39,7 @@ charadex.sheet = {
     prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
+    ownershipLog:  "ownership log",
   },
 
   options: {
@@ -411,6 +412,30 @@ charadex.page.masterlist = {
       sort: {
         toggle: true,
         key: "timestamp",
+        order: "desc",
+        parameters: []
+      },
+
+      pagination: {
+        toggle: true,
+        bottomToggle: false,
+        amount: 12,
+      },
+
+    },
+
+    [charadex.sheet.pages.ownershipLog]: {
+
+      sheetPage: charadex.sheet.pages.ownershipLog,
+      primaryProperty: 'id',
+      relatedProperty: 'id',
+      dexSelector: 'log',
+      profileProperty: 'design',
+      profileToggle: false,
+
+      sort: {
+        toggle: true,
+        key: "date",
         order: "desc",
         parameters: []
       },
