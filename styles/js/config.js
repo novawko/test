@@ -45,7 +45,7 @@ charadex.sheet = {
   options: {
 
     designTypes: ['All', 'Mascot', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
-    statuses: ['All', 'OG Owner', 'Sale', 'Trade', 'Gift', 'Voided'],
+    statuses: ['All', 'Sale', 'Trade', 'Gift', 'Not For Trade', 'Voided'],
     rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mutation'],
     subtypes: ['All', 'Active', 'Broken', 'Kept'],
     itemTypes: ['All', 'MYO Slot', 'Trait'],
