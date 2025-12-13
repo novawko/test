@@ -429,7 +429,7 @@ charadex.page.masterlist = {
       sheetPage: charadex.sheet.pages.ownershipLog,
       primaryProperty: 'id',
       relatedProperty: 'id',
-      dexSelector: 'ownershiplog',
+      dexSelector: 'ownerlog',
       profileProperty: 'design',
       profileToggle: false,
 
