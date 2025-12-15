@@ -16,7 +16,7 @@ let charadex = {};
 /* ==================================================================== */
 charadex.site = {
   title: "Test Title",
-  url: "https://novawko.github.io/test/",
+  url: "https://mewwo.netlify.app/",
   description: `Your description here.`
 }
 
