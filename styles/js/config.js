@@ -39,17 +39,16 @@ charadex.sheet = {
     prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
-    ownershipLog:  "ownership log",
   },
 
   options: {
 
     designTypes: ['All', 'Mascot', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
     statuses: ['All', 'Sale', 'Trade', 'Gift', 'Not For Trade', 'Voided'],
-    rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mutation'],
-    subtypes: ['All', 'Active', 'Broken', 'Kept'],
-    itemTypes: ['All', 'MYO Slot', 'Trait'],
-    traitTypes: ['All', 'Required', 'Heart', 'Core', 'Shell', 'Glyph', 'Body', 'Mutation', 'Event', 'Shop']
+    rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythical', 'Legendary', 'Mutation'],
+    species: ['All', 'Species One', 'Species Two', 'Species Three'],
+    itemTypes: ['All', 'MYO Slot', 'Trait', 'Pet', 'Misc'],
+    traitTypes: ['All', 'Required', 'Ears', 'Limb', 'Tail', 'Body', 'Mutation', 'Eye', 'Mouth', 'Event']
 
   }
 
@@ -391,7 +390,7 @@ charadex.page.masterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['All', 'ID', 'Owner', 'Designer', 'Artist', 'Traits']
   },
 
   prevNext: {
@@ -423,31 +422,7 @@ charadex.page.masterlist = {
       },
 
     },
-
-    [charadex.sheet.pages.ownershipLog]: {
-
-      sheetPage: charadex.sheet.pages.ownershipLog,
-      primaryProperty: 'id',
-      relatedProperty: 'id',
-      dexSelector: 'ownership',
-      profileProperty: 'design',
-      profileToggle: false,
-
-      sort: {
-        toggle: true,
-        key: "date",
-        order: "desc",
-        parameters: []
-      },
-
-      pagination: {
-        toggle: true,
-        bottomToggle: false,
-        amount: 12,
-      },
-
-    },
-
+  
     [charadex.sheet.pages.imageGallery]: {
 
       ... charadex.page.imageGallery,
@@ -477,6 +452,8 @@ charadex.page.masterlist = {
   }
 
 };
+
+
 
 /* Inventory
 /* --------------------------------------------------------------- */
@@ -599,6 +576,7 @@ charadex.page.inventory = {
   }
 
 };
+
 
 
 /* Index
