@@ -48,7 +48,8 @@ charadex.sheet = {
     rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythical', 'Legendary', 'Mutation'],
     species: ['All', 'Species One', 'Species Two', 'Species Three'],
     itemTypes: ['All', 'MYO Slot', 'Trait', 'Pet', 'Misc'],
-    traitTypes: ['All', 'Required', 'Ears', 'Limb', 'Tail', 'Body', 'Mutation', 'Eye', 'Mouth', 'Event']
+    traitTypes: ['All', 'Required', 'Ears', 'Limb', 'Tail', 'Body', 'Mutation', 'Eye', 'Mouth', 'Event'],
+    promptTypes: ['All', 'Permanent', 'Monthly', 'Seasonal', 'Birthday']
 
   }
 
@@ -189,9 +190,9 @@ charadex.page.prompts = {
   },
 
   fauxFolder: {
-    toggle: false,
-    folderProperty: '',
-    parameters: [],
+    toggle: true,
+    folderProperty: 'Category',
+    parameters: charadex.sheet.options.promptTypes,
   },
 
   search: {
