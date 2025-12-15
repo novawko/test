@@ -719,7 +719,8 @@ p:last-child {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 200px;
+  min-height: 200px;
+  margin-top: 10px;
 }
 
 /* Makes sure your text formatting is preserved from the sheet */
