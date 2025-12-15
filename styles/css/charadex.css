@@ -720,7 +720,7 @@ p:last-child {
   background-size: contain;
   background-repeat: no-repeat;
   min-height: 200px;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 /* Makes sure your text formatting is preserved from the sheet */
