@@ -714,7 +714,7 @@ p:last-child {
 /* Prompts */
 .cd-prompt-background {
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   min-height: 150px;
 }
 
