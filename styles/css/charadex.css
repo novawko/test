@@ -81,6 +81,9 @@ body {
   --cd-rarity-veryrare-bg: #548b71;
   --cd-rarity-veryrare-txt: var(--cd-rarity-common-txt);
 
+  --cd-rarity-mutation-bg: #121212;
+  --cd-rarity-mutation-txt: var(--cd-rarity-common-txt);
+
   /* Legendary & Mythic */
   --cd-rarity-legendary-bg: #5a473e;
   --cd-rarity-legendary-txt: var(--cd-rarity-common-txt);
@@ -768,6 +771,11 @@ p:last-child {
 .badge-veryrare {
   background-color: var(--cd-rarity-veryrare-bg);
   color: var(--cd-rarity-veryrare-txt);
+}
+
+.badge-mutation {
+  background-color: var(--cd-rarity-mutation-bg);
+  color: var(--cd-rarity-mutation-txt);
 }
 
 .badge-legendary,
