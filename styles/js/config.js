@@ -191,7 +191,7 @@ charadex.page.prompts = {
 
   fauxFolder: {
     toggle: true,
-    folderProperty: 'Category',
+    folderProperty: 'Prompt Type',
     parameters: charadex.sheet.options.promptTypes,
   },
 
