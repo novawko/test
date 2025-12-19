@@ -784,3 +784,13 @@ p:last-child {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
 }
+
+/* ============================================================= */
+/* Nova's Tweeks
+/* ============================================================= */
+
+@media only screen and (max-width: 600px) {
+  #todopage_title {
+  font-size: 2.5rem !important;
+  }
+}
