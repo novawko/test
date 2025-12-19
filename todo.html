@@ -1,161 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- About Your Site                                                   -->
-  <!-- ----------------------------------------------------------------- -->
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-  <title>Site Title | To-Do List</title>
-  <meta name="title" content="Site Title | To-Do List" />
-  <meta name="type" content="website" />
-  <meta name="url" content="https://mewwo.netlify.app/todo.html" />
-  <meta name="image" content="assets/meta.png" />
-  <meta name="description" content="View the to-do list of things that need to be done!">
-
-  <!-- No AI scraping directives -->
-  <meta name="robots" content="noai">
-  <meta name="robots" content="noimageai">
-
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Styles                                                            -->
-  <!-- ----------------------------------------------------------------- -->
-
-  <!-- Bootstrap CSS -->
-  <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
-  <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- Optional Styles                                                   -->
-  <!-- ----------------------------------------------------------------- -->
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
-
-
-</head>
-
-<body id="charadex-body">
-
-
-  <!-- --------------------------------------------------------------------
-  <-- Header
-  <-------------------------------------------------------------------- -->
-  <div class="load-html" id="header" data-source="includes/header.html"></div>
-
-
-  <!-- --------------------------------------------------------------------
-  <-- Main List
-  <-------------------------------------------------------------------- -->
-  <div class="container" id="main-container">
-    
-   <!-- --------------------------------------------------------------------
-   <-- Title
-   <-------------------------------------------------------------------- -->
-    <div class="col-12 rounded">
-        <div class="card p-3 mx-md-0 mx-n3 my-md-0 my-1" style="min-height: 500px;">
-          <h1 class="display-4 mb-1 text-center text-uppercase" id="todopage_title"><a href="todo.html">TO-DO LIST</a></h1>
-            <div class="card rounded-0 mb-3"></div>
-
-            <!-- --------------------------------------------------------------------
-     	      <-- The To-Do List
-    	      <-------------------------------------------------------------------- -->
-
-          <ul class="fa-ul ml-4">
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Unchecked box.</li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Unchecked box.</li>
-            <li><span class="fa-li"><i class="fa-regular fa-check-square"></i></span>A completed task aka the checked box.</li>
-            <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Unchecked box. Keep your to-do neat by deleting off lines of completed tasks after a specific amount of time desired. This whole box will not scroll.</li>
-          </ul>
-
-            <!-- --------------------------------------------------------------------
-     	      <-- Required CSS Snippet - DELETE THIS SECTION
-    	      <-------------------------------------------------------------------- -->
-          <p><b>You must put this piece of CSS for the Title to become mobile friendly, it has an ID set already for you in the HTML. Put this snippet at the very bottom of everything of the <code>charadex.css</code> file. You can select all but may not work on some devices or browsers.</b></p>
-
-          <!-- BUTTONS -->
-<ul class="nav nav-pills nav-fill d-flex flex-wrap mb-3">
-  <li class="nav-item m-1 p-1 rounded">
-    <a class="card nav-link active btn btn-primary border-0 text-uppercase" style="letter-spacing: .15em; font-size: large;" data-toggle="pill" href="#selectall" role="tab">Select All</a>
-  </li>
-  <li class="nav-item m-1 p-1 rounded">
-    <a class="card nav-link btn btn-primary border-0 text-uppercase" style="letter-spacing: .15em; font-size: large;" data-toggle="pill" href="#manualselect" role="tab">Manual Select</a>
-  </li>
-</ul>
-<!-- buttons end -->
-
-<!-- TAB CONTENT -->
-<div class="tab-content">
-
-  <!-- SELECT ALL SECTION -->
-  <div class="tab-pane fade show active" id="selectall">
-    <div class="card bg-faded">
-      <pre class="p-3 text-muted" style="user-select: all;">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- ----------------------------------------------------------------- -->
+      <!-- About Your Site                                                   -->
+      <!-- ----------------------------------------------------------------- -->
+      <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+      <title>Site Title | To-Do List</title>
+      <meta name="title" content="Site Title | To-Do List" />
+      <meta name="type" content="website" />
+      <meta name="url" content="https://mewwo.netlify.app/todo.html" />
+      <meta name="image" content="assets/meta.png" />
+      <meta name="description" content="View the to-do list of things that need to be done!">
+      <!-- No AI scraping directives -->
+      <meta name="robots" content="noai">
+      <meta name="robots" content="noimageai">
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Styles                                                            -->
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Bootstrap CSS -->
+      <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
+      <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <!-- Font Awesome Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Optional Styles                                                   -->
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Custom CSS -->
+      <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
+   </head>
+   <body id="charadex-body">
+      <!-- --------------------------------------------------------------------
+      <-- Header
+      <-------------------------------------------------------------------- -->
+      <div class="load-html" id="header" data-source="includes/header.html"></div>
+     
+      <!-- --------------------------------------------------------------------
+      <-- Main List
+      <-------------------------------------------------------------------- -->
+      <div class="container" id="main-container">
+        
+         <!-- --------------------------------------------------------------------
+         <-- Title
+         <-------------------------------------------------------------------- -->
+         <div class="col-12 rounded">
+            <div class="card p-3 mx-md-0 mx-n3 my-md-0 my-1" style="min-height: 500px;">
+               <h1 class="display-4 mb-1 text-center text-uppercase" id="todopage_title"><a href="todo.html">TO-DO LIST</a></h1>
+               <div class="card rounded-0 mb-3"></div>
+              
+               <!-- --------------------------------------------------------------------
+               <-- The To-Do List
+               <-------------------------------------------------------------------- -->
+               <ul class="fa-ul ml-4">
+                  <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Unchecked box.</li>
+                  <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Unchecked box.</li>
+                  <li><span class="fa-li"><i class="fa-regular fa-check-square"></i></span>A completed task aka the checked box.</li>
+                  <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Unchecked box. Keep your to-do neat by deleting off lines of completed tasks after a specific amount of time desired. This whole box will not scroll.</li>
+               </ul>
+              
+               <!-- --------------------------------------------------------------------
+               <-- Required CSS Snippet - DELETE THIS SECTION
+               <-------------------------------------------------------------------- -->
+               <p><b>You must put this piece of CSS for the Title to become mobile friendly, it has an ID set already for you in the HTML. Put this snippet at the very bottom of everything of the <code>charadex.css</code> file. You can select all but may not work on some devices or browsers.</b></p>
+               <!-- BUTTONS -->
+               <ul class="nav nav-pills nav-fill d-flex flex-wrap mb-3">
+                  <li class="nav-item m-1 p-1 rounded">
+                     <a class="card nav-link active btn btn-primary border-0 text-uppercase" style="letter-spacing: .15em; font-size: large;" data-toggle="pill" href="#selectall" role="tab">Select All</a>
+                  </li>
+                  <li class="nav-item m-1 p-1 rounded">
+                     <a class="card nav-link btn btn-primary border-0 text-uppercase" style="letter-spacing: .15em; font-size: large;" data-toggle="pill" href="#manualselect" role="tab">Manual Select</a>
+                  </li>
+               </ul>
+               <!-- buttons end -->
+               <!-- TAB CONTENT -->
+               <div class="tab-content">
+                  <!-- SELECT ALL SECTION -->
+                  <div class="tab-pane fade show active" id="selectall">
+                     <div class="card bg-faded">
+                        <pre class="p-3 text-muted" style="user-select: all;">
 @media only screen and (max-width: 600px) {
   #todopage_title {
   font-size: 2.5rem !important;
   }
 }
 </pre>
-    </div>
-  </div> <!-- select all section end -->
-
-  <!-- MANUAL SELECT SECTION -->
-  <div class="tab-pane fade" id="manualselect">
-    <div class="card bg-faded">
-      <pre class="p-3 text-muted">
+                     </div>
+                  </div>
+                  <!-- select all section end -->
+                  <!-- MANUAL SELECT SECTION -->
+                  <div class="tab-pane fade" id="manualselect">
+                     <div class="card bg-faded">
+                        <pre class="p-3 text-muted">
 @media only screen and (max-width: 600px) {
   #todopage_title {
   font-size: 2.5rem !important;
   }
 }
 </pre>
-    </div>
-  </div> <!-- manual select section end -->
-
-</div> <!-- tab content end -->
-            <!-- --------------------------------------------------------------------
-     	      <-- Required CSS Snippet - END
-    	      <-------------------------------------------------------------------- -->
-
-        </div>
+                     </div>
+                  </div>
+                  <!-- manual select section end -->
+               </div>
+               <!-- tab content end -->
+               <!-- --------------------------------------------------------------------
+               <-- Required CSS Snippet - END
+               <-------------------------------------------------------------------- -->
+              
+            </div>
+         </div>
       </div>
-
-  </div>
-
-  <!-- --------------------------------------------------------------------
-  <-- Footer
-  <-------------------------------------------------------------------- -->
-  <div class="load-html" id="footer" data-source="includes/footer.html"></div>
-
-  <!-- ----------------------------------------------------------------- -->
-  <!-- JS                                                                -->
-  <!-- ----------------------------------------------------------------- -->
-
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-  <!-- Charadex Script -->
-  <script src="styles/js/pages/base.js" type="module"></script>
-
-
-</body>
-
+     
+      <!-- --------------------------------------------------------------------
+      <-- Footer
+      <-------------------------------------------------------------------- -->
+      <div class="load-html" id="footer" data-source="includes/footer.html"></div>
+     
+      <!-- ----------------------------------------------------------------- -->
+      <!-- JS                                                                -->
+      <!-- ----------------------------------------------------------------- -->
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <!-- Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <!-- Charadex Script -->
+      <script src="styles/js/pages/base.js" type="module"></script>
+     
+   </body>
 </html>
