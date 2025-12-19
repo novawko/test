@@ -85,15 +85,52 @@
             <!-- --------------------------------------------------------------------
      	      <-- Required CSS Snippet - DELETE THIS SECTION
     	      <-------------------------------------------------------------------- -->
-          <p><b>You must put this piece of CSS for the Title to become mobile friendly, it has an ID set already for you in the HTML. Put this snippet at the very bottom of everything of the <code>charadex.css</code> file.</b></p>
-          <p><pre>
+          <p><b>You must put this piece of CSS for the Title to become mobile friendly, it has an ID set already for you in the HTML. Put this snippet at the very bottom of everything of the <code>charadex.css</code> file. You can select all but may not work on some devices or browsers.</b></p>
+
+          <!-- BUTTONS -->
+<ul class="nav nav-pills nav-fill d-flex flex-wrap mb-3">
+  <li class="nav-item bg-faded m-1 p-1 rounded">
+    <a class="card nav-link active btn btn-outline-primary border-0 text-uppercase" style="letter-spacing: .15em; font-size: large;" data-toggle="pill" href="#selectall" role="tab">Select All</a>
+  </li>
+  <li class="nav-item bg-faded m-1 p-1 rounded">
+    <a class="card nav-link btn btn-outline-primary border-0 text-uppercase" style="letter-spacing: .15em; font-size: large;" data-toggle="pill" href="#manualselect" role="tab">Manual Select</a>
+  </li>
+</ul>
+<!-- buttons end -->
+
+<!-- TAB CONTENT -->
+<div class="tab-content">
+
+  <!-- SELECT ALL SECTION -->
+  <div class="tab-pane fade show active" id="selectall">
+    <div class="card bg-faded">
+      <pre class="p-3 text-muted" style="user-select: all;">
 @media only screen and (max-width: 600px) {
   #todopage_title {
   font-size: 2.5rem !important;
   }
 }
-          </pre></p>
-           <!-- REQUIRED CSS SNIPPET END -->
+</pre>
+    </div>
+  </div> <!-- select all section end -->
+
+  <!-- MANUAL SELECT SECTION -->
+  <div class="tab-pane fade" id="manualselect">
+    <div class="card bg-faded">
+      <pre class="p-3 text-muted">
+@media only screen and (max-width: 600px) {
+  #todopage_title {
+  font-size: 2.5rem !important;
+  }
+}
+</pre>
+    </div>
+  </div> <!-- manual select section end -->
+
+</div> <!-- tab content end -->
+            <!-- --------------------------------------------------------------------
+     	      <-- Required CSS Snippet - END
+    	      <-------------------------------------------------------------------- -->
 
         </div>
       </div>
