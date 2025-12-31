@@ -11,3 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
   charadex.tools.updateMeta();
   charadex.tools.loadPage('#charadex-body', 100);
 });
+
+/* ==================================================================== */
+/* Flipping Card
+======================================================================= */
+var wonkers = document.querySelectorAll('.wonker');
+
+[...wonkers].forEach((wonker)=>{
+  wonker.addEventListener( 'click', function() {
+    wonker.classList.toggle('is-flipped');
+  });
+});
