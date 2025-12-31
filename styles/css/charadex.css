@@ -794,3 +794,41 @@ p:last-child {
   font-size: 2.5rem !important;
   }
 }
+
+.eep {
+  display: inline-block;
+  width: 200px;
+  height: 260px;
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.wonker {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.wonker.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.wonker__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.wonker__face--front {
+  background: black;
+}
+
+.wonker__face--back {
+  background: gray;
+  transform: rotateY(180deg);
+}
