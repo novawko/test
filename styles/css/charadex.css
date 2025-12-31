@@ -797,8 +797,8 @@ p:last-child {
 
 .eep {
   display: inline-block;
-  width: 600px;
-  height: 750px;
+  width: auto;
+  height: 500px;
   perspective: 600px;
 }
 
