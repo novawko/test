@@ -355,44 +355,25 @@ charadex.page.imageGallery = {
 /* --------------------------------------------------------------- */
 charadex.page.updates = {
 
-  sheetPage: charadex.sheet.pages.updates,
-  sitePage: 'updates',
-  dexSelector: 'charadex',
-  profileProperty: 'id',
+      sheetPage: charadex.sheet.pages.updates,
+      primaryProperty: 'id',
+      relatedProperty: 'id',
+      dexSelector: 'log',
+      profileProperty: 'update',
+      profileToggle: false,
 
-  sort: {
-    toggle: true,
-    key: "id",
-    order: "desc",
-    parameters: []
-  },
+      sort: {
+        toggle: true,
+        key: "timestamp",
+        order: "desc",
+        parameters: []
+      },
 
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 20,
-  },
-
-  filters: {
-    toggle: false,
-    parameters: {}
-  },
-
-  fauxFolder: {
-    toggle: false,
-    folderProperty: '',
-    parameters: [],
-  },
-
-  search: {
-    toggle: false,
-    filterToggle: true,
-    parameters: []
-  },
-
-  prevNext: {
-    toggle: false,
-  },
+      pagination: {
+        toggle: true,
+        bottomToggle: false,
+        amount: 20,
+      },
 
 };
 
