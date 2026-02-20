@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------------------------------------------------------- -->
+    <!-- About Your Site                                                   -->
+    <!-- ----------------------------------------------------------------- -->
+    <link rel="shortcut icon" type="image/png" href="assets/favicon2.png" />
+    <title>Site Name | Changelog V2</title>
+    <meta name="title" content="Site Name | Changelog V2" />
+    <meta name="type" content="website" />
+    <meta name="url" content="https://mewwo.netlify.app/updates-v2.html" />
+    <meta name="image" content="assets/meta.png" />
+    <meta name="description" content="View the latest site changes.">
+    <!-- No AI scraping directives -->
+    <meta name="robots" content="noai">
+    <meta name="robots" content="noimageai">
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Styles                                                            -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Bootstrap CSS -->
+    <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
+    <!-- https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Optional Styles                                                   -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/css/charadex.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400|Comfortaa:500" rel="stylesheet">
+  </head>
+  <body id="charadex-body">
+    <!-- --------------------------------------------------------------------
+    <-- Header
+    <-------------------------------------------------------------------- -->
+    <div class="load-html" id="header" data-source="includes/header.html"></div>
+    
+    <div class="container" id="main-container">
+      <!-- --------------------------------------------------------------------
+      <-- Main List
+      <-------------------------------------------------------------------- -->
+      <div class="row m-md-0 m-1 justify-content-center">
+        <div class="col-12 p-0">
+          
+          <!-- --------------------------------------------------------------------
+          <-- Updates Header
+          <-------------------------------------------------------------------- -->
+          <div class="text-center" style="background-image: url('https://img-l.ink/img/1q8QGyOHINqZymdP5J6GYWnSdfUInt61w.png'); background-position: center; background-size: cover; background-repeat: no-repeat; height: 200px; border-radius: 1rem 1rem 0px 0px !important; display: flex; align-items: center; justify-content: center;">
+            <a href="updates-v2.html"><h1>Updates</h1></a>
+          </div>
+          <!-- UPDATES HEADER END -->
+          
+          <div class="card p-1" style="border-radius: 0px 0px 1rem 1rem !important; height: 595px;">
+            <div class="row no-gutters">
+              <div class="col-12">
+                <div class="p-1">
+                  <div class="rounded-0 p-3" style="border-radius: 0px 0px 1rem 1rem !important;">
+                    <div class="row no-gutters">
+                      <div class="col-md-3"><b><span class="timestamp"></span></b></div>
+                      <div class="col-md-9"><span class="reason"></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- --------------------------------------------------------------------
+    <-- Footer
+    <-------------------------------------------------------------------- -->
+    <div class="load-html" id="footer" data-source="includes/footer.html"></div>
+    <!-- ----------------------------------------------------------------- -->
+    <!-- JS                                                                -->
+    <!-- ----------------------------------------------------------------- -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Charadex Script -->
+    <script src="styles/js/pages/base.js" type="module"></script>
+    <script src="styles/js/pages/updates.js" type="module"></script>
+  </body>
+</html>
