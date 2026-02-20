@@ -39,6 +39,7 @@ charadex.sheet = {
     prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
+    updates:       "updates",
   },
 
   options: {
@@ -341,6 +342,52 @@ charadex.page.imageGallery = {
     toggle: true,
     filterToggle: true,
     parameters: ['All', 'Designs', 'Artist', 'Tags']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
+
+
+/* Changelog
+/* --------------------------------------------------------------- */
+charadex.page.updates = {
+
+  sheetPage: charadex.sheet.pages.updates,
+  sitePage: 'updates',
+  dexSelector: 'charadex',
+  profileProperty: 'id',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "desc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 20,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {}
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: false,
+    filterToggle: true,
+    parameters: []
   },
 
   prevNext: {
