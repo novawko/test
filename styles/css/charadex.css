@@ -913,4 +913,7 @@ p:last-child {
     .modal__img {
         max-width: 80%
     }
+    .modal__container {
+    padding: 1rem;
+    }
 }
