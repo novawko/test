@@ -847,6 +847,7 @@ p:last-child {
 .modal {
     max-width: 700px;
     width: 85%;
+    height: auto;
     position: fixed;
     top: 50%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
