@@ -35,8 +35,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
         entry.fancytags = fancyTagArr.join(' ');
 
-        if (profile.tags.length > 0) $("#charadex-profile-tags").show(); // Show them tags if any
-
       }
     }
   );
