@@ -338,6 +338,11 @@ charadex.page.imageGallery = {
     parameters: [],
   },
 
+  tags: {
+    toggle: true,
+    parameters: ['icon', 'fullbody', 'scene', 'test', 'anothertag', 'testtag', '2025'],
+  },
+
   search: {
     toggle: true,
     filterToggle: true,
