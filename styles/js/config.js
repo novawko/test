@@ -340,7 +340,7 @@ charadex.page.imageGallery = {
 
   tags: {
     toggle: true,
-    parameters: ['icon', 'fullbody', 'scene', 'test', 'anothertag', 'testtag', '2025'],
+    parameters: ['icon', 'fullbody', 'scene', 'test', 'anothertag', 'testtag', '2025']
   },
 
   search: {
