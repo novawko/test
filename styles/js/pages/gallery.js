@@ -19,7 +19,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         if (profile.tags.length > 0) $("#charadex-profile-tags").show();
 
-        // We're gonna make some badges but you dont have to use them
+      }
+
+      // We're gonna make some badges but you dont have to use them
         entry.designs = entry.designs.split(',');
         entry.designBadges = [];
         for (let design of entry.designs) {
@@ -28,8 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           );
         }
         entry.designBadges = entry.designBadges.join(' ');
-
-      }
+      
     });
   charadex.tools.loadPage('.softload', 500);
 });
