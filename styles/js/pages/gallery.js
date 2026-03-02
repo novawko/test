@@ -33,9 +33,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             fancyTagArr.push(`<a href="${charadex.url.addUrlParameters(charadex.url.getPageUrl(charadex.page.imageGallery.sitePage), {tags: tag})}">#${tag.trim()}</a>`);
           }
         }
-        entry.fancytags = fancyTagArr.join(' ');
-
         if (profile.tags.length > 0) $("#charadex-profile-tags").show();
+        entry.fancytags = fancyTagArr.join(' ');
 
       }
     }
