@@ -17,10 +17,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         const profile = listData.profileArray[0];
 
-        linkSelectors.forEach(({ key, selector }) => {
-          if (profile[key]) $(selector).show();
-        });
-
         if (profile.tags.length > 0) $("#charadex-profile-tags").show();
 
       }
