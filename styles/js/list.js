@@ -241,7 +241,7 @@ charadex.listFeatures.tags = (pageUrl, parameters, selector = 'charadex') => {
 
   return addTags;
 
-}
+};
 
 /* ==================================================================== */
 /* Faux Folders
