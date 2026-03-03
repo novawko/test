@@ -38,6 +38,7 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     charadex.tools.addProfileLinks(entry, pageUrl, config.profileProperty); // Go ahead and add profile keys just in case
     if (folders) folders(entry, config.fauxFolder.folderProperty); // If folders, add folder info
     if (entry.rarity) entry.raritybadge = `<span class="badge badge-${charadex.tools.scrub(entry.rarity)}">${entry.rarity}</span>`; // Adds a rarity badge
+    if (tags) tags(entry); // Add tags if any
   }
 
   // If there's related data, add it
