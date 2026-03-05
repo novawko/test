@@ -27,14 +27,18 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // Make the tags pretty and actually work
         entry.tags = entry.tags ? entry.tags.split(',') : [];
+        const pageUrl = charadex.url.getPageUrl('gallery');
         let fancyTagArr = [];
-        if (entry.tags.length >= 1) {
-          for (let tag of entry.tags) {
-            fancyTagArr.push(`<a href="${charadex.url.addUrlParameters(charadex.url.getPageUrl(charadex.page.imageGallery.sitePage), {tags: tag})}">#${tag.trim()}</a>`);
-          }
+
+        for (let tag of entry.tags) {
+          let cleanTag = tag.trim();
+          let tagLink = charadex.url.addUrlParameters(pageUrl, { tags: cleanTag });
+          fancyTagArr.push(`<a href="${tagLink}">#${cleanTag}</a>`);
         }
 
         entry.fancytags = fancyTagArr.join(' ');
+
+      }
 
       }
     }
